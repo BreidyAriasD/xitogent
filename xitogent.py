@@ -34,7 +34,7 @@ os.environ['REQUESTS_CA_BUNDLE'] = handle.name
 
 CORE_URL = 'https://app.xitoring.com/'
 AGENT_URL = 'https://app.xitoring.com/xitogent/xitogent'
-
+'https://vim /etc/yum.repos.d/xitogent.repo'
 CONFIG_FILE = '/etc/xitogent/xitogent.conf'
 PID_FILE = '/var/run/xitogent.pid'
 
@@ -42,6 +42,13 @@ PID_FILE = '/var/run/xitogent.pid'
 VERSION = '1.0.4'
 LAST_UPDATE_ATTEMPT = ''
 SENDING_DATA_SECONDS = 60
+
+echo "[Xitogent]"
+echo "name=Xitoring Agent on your machine"
+echo "baseurl=https://mirror.xitoring.com/centos"
+echo "enabled=1"
+echo "gpgcheck=1"
+echo "gpgkey=https://mirror.xitoring.com/centos/RPM-GPG-KEY-Xitogent"
 
 
 def reset_items():
